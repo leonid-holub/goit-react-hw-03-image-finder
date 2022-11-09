@@ -1,4 +1,5 @@
 import React from 'react';
+import { FcSearch } from 'react-icons/fc';
 import css from './Searchbar.module.css';
 
 class Searchbar extends React.Component {
@@ -31,7 +32,9 @@ class Searchbar extends React.Component {
       <header className={css.Searchbar}>
         <form className={css.SearchForm} onSubmit={this.handleSubmit}>
           <button type="submit" className={css['SearchForm-button']}>
-            <span className="button-label">Search</span>
+            <span className={css['button-label']}>
+              <FcSearch className={css['button-image']} />
+            </span>
           </button>
 
           <input
